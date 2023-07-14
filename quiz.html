@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble</title>
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="words.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Q </h1>
+        <h2>a p p l e</h2>
+        <ul>
+            <li id="hint"></li>
+            <li id="time">Time: </li>
+        </ul>
+        <input type="text" id="answer" placeholder="Enter your answer" oninput="maxlength(this)" autofocus onkeyup="enterkey(event)">
+        <button id="check">Check Word</button>
+        <p>
+            <button id="refresh">Refresh Word</button>
+            <button onClick="location.href='gameover.html'">finish the game</button>
+        </p>
+    </div>
+</body>
+</html>
