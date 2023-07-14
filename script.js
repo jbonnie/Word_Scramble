@@ -2,7 +2,7 @@ let clear = new Array(10).fill(false);
 let select;       // 문제 번호
 let answer = "";        // 현재 문제의 정답
 let clear_total = 1;        // 푼 문제 개수 - 1
-let time_left = 30;     // 한 문제당 시간 제한
+let time_left = 60;     // 한 문제당 시간 제한
 let time_total = 0;     // 모든 문제를 푸는 데 걸리는 시간
 let interval;
 let total_interval;
@@ -24,7 +24,7 @@ function select_q() {
 }
 // 새로운 문제로 넘어감
 function new_q() {
-    time_left = 30;     // 제한시간 초기화
+    time_left = 60;     // 제한시간 초기화
     document.querySelector('#time').innerText = "Time: " + time_left + "s";
     document.querySelector('input').value = "";     // 입력창 비우기
     document.querySelector('#check').innerText = "Check Word";      // check word 버튼 초기화
